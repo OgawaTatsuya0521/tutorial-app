@@ -1,0 +1,8 @@
+<div class="categoies">
+  <% @top.each do |top| %> <!--作成されたカテゴリと内容を一覧化-->
+    <div class="detail">
+      <h2><%= top.categories %>:<%= link_to "#{top.text}", "/top/#{top.id}/tweet/id" , method: :get%></h2>
+      <!--<h2>hello</h2>-->
+    </div>
+  <% end %>
+</div>

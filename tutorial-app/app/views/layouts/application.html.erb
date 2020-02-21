@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TutorialApp</title>
+    <%= csrf_meta_tags %>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h1><a href="/top">TEST-APP</a></h1>
+        <% if user_signed_in? %>
+          <div class="account-after-sign">
+              <%= link_to "新規カテゴリ作成", new_top_path, method: :get , class:'get'%>
+              <%= link_to "サインアウト", destroy_user_session_path, method: :delete , class:'sign-out'%>
+          </div>
+        <% else %>
+          <div class="account-setting">
+            <%= link_to "新規登録", new_user_registration_path, method: :get , class:'sign-up'%>
+            <%= link_to "ログイン", new_user_session_path, method: :get , class:'sign-in'%>
+          </div>
+        <% end %>
+      </div>
+    </header>
+    <%= yield %>
+  </body>
+</html>

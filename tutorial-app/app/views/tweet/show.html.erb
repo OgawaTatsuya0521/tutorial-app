@@ -1,0 +1,9 @@
+<div class="threads">
+<%= link_to "新規スレッド作成" , new_top_tweet_path, method: :get , class:'get' %>
+  <% @tweet.each do |tweet| %><!--作成されたスレッドと内容を一覧化-->
+    <div class="thread-detail">
+      <h2><%= tweet.tweet %>:<%= tweet.text %> %></h2>
+      <!--<h2>hello</h2>-->
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html {
+  /*height: 1000px;*/
+  /*width: 840px;*/
+  background-color: gray;
+  /*margin: 0px;*/
+  /*padding:0px;*/
+}
+
+body{
+  height: 1000px;
+  width: 840px;
+  background-color: white;
+  
+  margin:auto;
+  padding:0px;
+}
+
+.header{
+    height: 80px;
+    width: 840px;
+    background-color: #fefb64;
+}
+
+.header h1{
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+.header a{
+    text-decoration: none;
+    color:black;
+}
+
+.account-setting{
+    line-height: 80px;
+    float:right;
+    margin-right: 192px;
+}
+
+.account-setting sing-up{
+    width: 96px;
+    height: 33px;
+    color: black;
+}
+
+.account-setting sing-in{
+    width: 96px;
+    height: 33px;
+    color: black;
+}
+
+.account-after-sign{
+    line-height: 80px;
+    float:right;
+    margin-right: 192px;
+}
+
+.account-setting get{
+    width: 192px;
+    height: 33px;
+    color: black;
+}
+
+.account-setting sing-out{
+    width: 96px;
+    height: 33px;
+    color: black;
+}
+
+.sign-up-setting{
+    height: 600px;
+    width: 500px;
+    margin: auto;
+}
+
+.sign-in-setting{
+    height: 600px;
+    width: 500px;
+    margin: auto;
+}
+
+.password-forgot-setting{
+    height: 600px;
+    width: 500px;
+    margin: auto;
+}
+
+.detail{
+    height: 100px;
+    width: 680px;
+    margin: 50px auto 0px;
+    border: solid 3px #000000;
+    
+}
